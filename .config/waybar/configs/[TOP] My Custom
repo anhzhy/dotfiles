@@ -1,0 +1,49 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+// My Custom
+
+{
+"include": [
+  "$HOME/.config/waybar/Modules",
+  "$HOME/.config/waybar/ModulesWorkspaces",
+  "$HOME/.config/waybar/ModulesCustom",
+  ],
+"layer": "top",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 3,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 3,
+"margin-left": 8,
+"margin-right": 8,
+	
+"modules-left": [
+	"hyprland/workspaces#kanji",
+  "custom/separator#line",
+  "cpu",
+  "memory",
+	"custom/separator#blank_2",
+  "custom/cava_mviz",
+],
+
+"modules-center": [
+	"custom/menu",
+  "idle_inhibitor",
+	"custom/separator#dot-line",
+	"clock",
+	"custom/separator#dot-line",
+  "backlight#vertical",
+  "custom/lock",
+],
+		
+"modules-right": [
+	"tray",
+	"network#speed",
+  "custom/separator#line",
+	"pulseaudio",
+  "pulseaudio#microphone",
+	"custom/separator#line",
+	"custom/power",					
+	],
+}
